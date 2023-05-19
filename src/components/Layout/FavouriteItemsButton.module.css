@@ -1,0 +1,16 @@
+.button {
+    cursor: pointer !important;
+    background-color: palevioletred  !important;
+    color: #ffffff !important;
+    border-radius: 15px !important;
+    border-color: #837280;
+    font-weight: bold !important;
+    margin-top: 5px;
+    margin-left: 40px;
+    position: relative;
+    max-height: 2.5rem;
+  }
+  
+  .button:hover {
+    background-color: #e7a6ae !important;
+  }

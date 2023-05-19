@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react'
+import Header from './components/Layout/Header';
+import Favourites from './components/FavouritesItems/Favourites'
+import classes from './App.css';
+import Cocktails from './components/Cocktails/Cocktails';
 
 function App() {
+  const [showModal, setShowModal] = useState(false)
+
+  const showFavourites = () => {
+    setShowModal(true)
+  }
+
+  const hideFavourites = () => {
+    setShowModal(false)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className={classes.main}>
+        {
+          showModal && <Favourites onClose={hideFavourites}/>
+        }
+        <Header onShowFavourites={showFavourites}/>
+        <Cocktails/>
+      </div>
+    
   );
 }
 

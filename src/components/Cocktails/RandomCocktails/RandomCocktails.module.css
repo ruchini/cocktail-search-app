@@ -1,0 +1,55 @@
+.cocktails {
+    max-width: 80rem;
+    width: 80%;
+    margin: auto;
+    /* margin-top: 1rem; */
+    background-color: #6e1963;
+    position: relative;
+    animation: cocktails-appear 1s ease-out forwards;
+    height: 100%;
+  }
+
+  .button {
+    cursor: pointer !important;
+    border-radius: 10px !important;
+    font-weight: bold !important;
+    padding: 5px !important;
+    /* background-color: #110b0dd5 !important; */
+    color: #ffffff !important;
+  }
+  
+  .button:hover {
+    background-color: #d61db4 !important;
+  }
+
+  .buttonHeader {
+    margin: 10px;
+  }
+
+  @keyframes cocktails-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.cocktailContainer{
+    background-color: #6e1963;
+    margin-top: auto;
+    /* padding-top: 3rem; */
+}
+
+.serachResult {
+  cursor: pointer !important;
+  border-radius: 10px !important;
+  font-weight: bold !important;
+  padding: 5px !important;
+  color: #ffffff !important;
+  background-color: #6e1963;
+  height: 1000px;
+}

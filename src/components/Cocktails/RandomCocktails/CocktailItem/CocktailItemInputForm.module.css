@@ -1,0 +1,39 @@
+.form {
+    text-align: right;
+  }
+  
+  .form button {
+    font: inherit;
+    cursor: pointer;
+    background-color: #2baed6;
+    border: 1px solid #5ca9e7;
+    color: white;
+    padding: 0.25rem 2rem;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-right: 50px;
+  
+  }
+  
+  .form button:hover {
+    background-color: #0c6a86;
+  }
+
+  .form button:active {
+    background-color: #55c9ec;
+    box-shadow: 0 5px #077b9e;
+    transform: translateY(4px);
+  }
+   
+  .buttonCard {
+    cursor: pointer !important;
+    font-weight: bold !important;
+    /* padding: 5px !important; */
+    /* background-color: #eb2ae1 !important; */
+    color: #0f1de4 !important; 
+  }
+
+  .actionCard{
+    padding: 5px;
+    margin-left: 20px;
+  }
